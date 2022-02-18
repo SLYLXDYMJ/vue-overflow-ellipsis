@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>template-rollup</title>
+
+  <link rel="stylesheet" href="../dist/vueOverflowEllipsis.css">
+
+  <style>
+    .page-ellipsis {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    .page-ellipsis::before,
+    .page-ellipsis::after {
+      content: '';
+    }
+    .page-ellipsis::before {
+      flex-grow: 1;
+    }
+    .page-ellipsis::after {
+      flex-grow: 4;
+    }
+    .page-ellipsis .ellipsis-container {
+      flex: auto;
+      overflow: auto;
+    }
+    .page-ellipsis .ellipsis-container .ellipsis-component {
+      margin: 0 auto;
+      width: 560px;
+      max-width: 90%;
+      resize: horizontal;
+      border: 1px solid #409eff;
+      padding: 10px 20px;
+      height: auto;
+      overflow: hidden;
+    }
+    .page-ellipsis .ellipsis-container .ellipsis-component .ellipsis-content {
+      font-size: 16px;
+      line-height: 2;
+      text-align: left;
+    }
+    .page-ellipsis .ellipsis-container .ellipsis-notice {
+      padding: 20px 0;
+    }
+    .page-ellipsis .ellipsis-container .ellipsis-github {
+      margin: 10px 0;
+    }
+    .page-ellipsis .ellipsis-container .btn {
+      color: #409eff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="root">
+  <div class="page-ellipsis">
+    <div class="ellipsis-container">
+      <div class="ellipsis-notice">
+        组件是自适应宽度的，拖动右下角改变宽度查看效果。
+      </div>
+      <div class="ellipsis-component">
+        <vue-overflow-ellipsis
+          class="ellipsis-content"
+          :ellipsis.sync="ellipsis"
+          :content="content"
+          :rows="rows"
+          :ellipsis-text="ellipsisText"
+          :show-more-text="showMoreText"
+          :hide-more-text="hideMoreText"
+          btn-show
+          @show-more="showMore"
+          @hide-more="hideMore">
+        </vue-overflow-ellipsis>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+<script src="../dist/vue-overflow-ellipsis.js"></script>
+<script>
+  new Vue({
+    data: function () {
+      return {
+        content: '五百里滇池，奔来眼底，披襟岸帻，喜茫茫空阔无边。看东骧神骏，西翥灵仪，北走蜿蜒，南翔缟素。高人韵士，何妨选胜登临。趁蟹屿螺洲，梳裹就风鬟雾鬓；更苹天苇地，点缀些翠羽丹霞，莫辜负四围香稻，万顷晴沙，九夏芙蓉，三春杨柳。数千年往事，注到心头，把酒凌虚，叹滚滚英雄谁在。想汉习楼船，唐标铁柱，宋挥玉斧，元跨革囊。伟烈丰功，费尽移山心力。尽珠帘画栋，卷不及暮雨朝云；便断碣残碑，都付与苍烟落照。只赢得几杵疏钟，半江渔火，两行秋雁，一枕清霜。',
+        rows: 4,
+        showMoreText: '查看全部',
+        hideMoreText: '折叠文字',
+        ellipsisText: '......',
+        ellipsis: true
+      }
+    },
+    methods: {
+      showMore: function () {
+        console.log('showMore')
+      },
+      hideMore: function () {
+        console.log('hideMore')
+      }
+    }
+  }).$mount('.root')
+</script>
+</body>
+</html>
