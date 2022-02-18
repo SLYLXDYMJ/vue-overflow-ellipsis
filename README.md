@@ -62,11 +62,11 @@ Vue.use(vueOverflowEllipsis)
 
 ### 安装依赖
 ```
-yarn install
+npm install
 ```
 
 ### 启动开发服务
 ```
-yarn serve
+npm run serve
 ```
 
