@@ -19,7 +19,7 @@ npm install vue-overflow-ellipsis-q
 or
 
 ```js
-import ellipsis from "vue-overflow-ellipsis"
+import vueOverflowEllipsis from "vue-overflow-ellipsis"
 import "vue-overflow-ellipsis/dist/index.css"
 ```
 
