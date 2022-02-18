@@ -6,7 +6,7 @@
 
 ### 1. 安装
 ```bash
-npm install vue-overflow-ellipsis
+npm install @q-jason/vue-overflow-ellipsis
 ```
 
 ### 2. 在项目中引入组件以及依赖
