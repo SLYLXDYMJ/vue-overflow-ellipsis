@@ -19,8 +19,8 @@ npm install vue-overflow-ellipsis-q
 or
 
 ```js
-import vueOverflowEllipsis from "vue-overflow-ellipsis"
-import "vue-overflow-ellipsis/dist/index.css"
+import vueOverflowEllipsis from "vue-overflow-ellipsis-q"
+import "vue-overflow-ellipsis-q/dist/index.css"
 ```
 
 ### 3. 使用组件
@@ -30,13 +30,6 @@ import "vue-overflow-ellipsis/dist/index.css"
     <vue-overflow-ellipsis :content="content"></vue-overflow-ellipsis>
   <!-- ... -->
 </template>
-
-<script>
-import vueOverflowEllipsis from 'vue-overflow-ellipsis'
-import "vue-overflow-ellipsis/dist/index.css"
-
-Vue.use(vueOverflowEllipsis)
-</script>
 ```
 
 ### 4. API
