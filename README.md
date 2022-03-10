@@ -1,6 +1,9 @@
 # vue-overlow-ellipsis
-> 原作者：https://github.com/wintc23/vue-overflow-ellipsis
+> 原作者：https://github.com/wintc23/vue-overflow-ellipsis <br/>
 > 将折叠逻辑整合到了组件内部。
+
+## Demo
+> https://q-jason.github.io/vue-overflow-ellipsis/docs/
 
 ## 在Vue项目中使用本组件
 
