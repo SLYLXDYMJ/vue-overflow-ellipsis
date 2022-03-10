@@ -12,7 +12,7 @@ npm install vue-overflow-ellipsis-q
 ### 2. 在项目中引入组件以及依赖
 
 ```html
-<link rel="stylesheet" href="./dist/vueOverflowEllipsis.css">
+<link rel="stylesheet" href="./dist/vue-overflow-ellipsis.css">
 <script src="./dist/vue-overflow-ellipsis.js"></script>
 ```
 
@@ -20,7 +20,7 @@ or
 
 ```js
 import vueOverflowEllipsis from "vue-overflow-ellipsis-q"
-import "vue-overflow-ellipsis-q/dist/index.css"
+import "vue-overflow-ellipsis-q/dist/vue-overflow-ellipsis.css"
 ```
 
 ### 3. 使用组件

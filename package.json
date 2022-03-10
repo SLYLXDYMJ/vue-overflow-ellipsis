@@ -1,6 +1,6 @@
 {
   "name": "vue-overflow-ellipsis-q",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/vue-overflow-ellipsis.cjs.js",
   "module": "dist/vue-overflow-ellipsis.esm.js",
   "unpkg": "dist/vue-overflow-ellipsis.js",
